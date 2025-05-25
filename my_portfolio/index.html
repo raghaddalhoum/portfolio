@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Player1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="overlay">
+    <div class="left-section">
+      <h1>WELCOME<br>PLAYER1</h1>
+      <p class="subtitle">PRESS PLAY TO<br><br>ENTER STORY MODE</p>
+      <button class="start-button" onclick="startGame()">START</button>
+    </div>
+
+    <div class="right-section">
+      <p class="follow-text">FOLLOW ME AT</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/raghad.abudalhoum"><img src="pics/facebook.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/raghadk.abo_dalhoum/"><img src="pics/instagram.png" alt="Instagram" /></a>
+       <a href="https://www.linkedin.com/in/raghad-abo-dalhoum-b9099a257/"> <img src="pics/linkedin (1).png" alt="LinkedIn" /></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function startGame() {
+      window.location.href = "level1.html"; // ← Change to your next page
+    }
+  </script>
+</body>
+</html>

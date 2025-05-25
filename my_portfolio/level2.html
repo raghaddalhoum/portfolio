@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   
+   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-image: url('pics/MacBook\ Pro\ 16_\ -\ 8\ \(1\).png'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      height: 100vh;
+    }
+     h1 {
+      margin-top: 900 px;
+      padding-top: 90px;
+      text-shadow: 2px 2px #000;
+    }
+
+    h2{
+        padding-top: 90px;
+      text-shadow: 2px 2px #000;
+    }
+
+ .start-button {
+  margin-top: 50px;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: 3px 3px #333;
+  background-color: #95e6db;
+  color: rgb(38, 22, 82);
+  padding: 12px 24px;
+  border: #000;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+    </style>
+ 
+</head>
+<body>
+ 
+  <script>
+    function startGame() {
+      window.location.href = "level22.html"; // ← Change to your next page
+    }
+  </script>
+
+    <div class="container">
+    
+    <div class="overlay">
+        <h1>LEVEL 2</h1>
+        <h2> EXPLORE MY SKILLS</h2>
+         <button class="start-button" onclick="startGame()">START</button>
+    
+     </div> </div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image: url('pics/origbig.png');
+      background-size: cover;
+      background-position: center;
+      font-family: monospace;
+      color: rgb(255, 255, 255);
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 40px;
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .arrow.left {
+        
+        font-family: 'Press Start 2P', cursive;
+      left: 30px;
+    }
+
+    .arrow.right {
+      font-family: 'Press Start 2P', cursive;
+      right: 30px;
+    }
+
+    .arrow:hover {
+      color: #191257;
+    }
+
+    .content-box {
+        box-shadow: 3px 3px #333;
+      font-family: 'Press Start 2P', cursive;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 750px;
+      padding: 20px;
+      background-color: #ffffff;
+      transform: translate(-50%, -50%);
+ border: 6px solid #8ce2e2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+        font-family: 'Press Start 2P', cursive;
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      margin-bottom: 15px;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 180px;
+      height: 180px;
+      margin-right: 20px;
+      background-color: rgb(252, 252, 252);
+      padding: 10px;
+      box-shadow: 0 0 0 10px #8ce2e2;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .text {
+        font-family: 'Press Start 2P', cursive;
+        line-height: 2;
+      max-width: 450px;
+      font-size: 10px;
+      color: black;
+      border-left: 2px solid #000;
+      padding-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="arrow left" onclick="goBack()">&lt;</button>
+
+    <div class="content-box">
+      <div class="title">DECODE YOUR DESTINATION</div>
+      <div class="main-content">
+        <div class="logo">
+          <img src="pics/Screenshot 2025-05-25 191802.png" alt="Pro League Logo"> 
+        </div>
+        <div class="text">
+          Switching from high school to university is a huge step in every Student learning journey, and the lack of guidance in the students’ early stages will result in losing their track, feeling insecure and frustrated. In this sense, leading students, especially freshmen, will help them clear their view to their desired destination and stay motivated. This is why the concept of this project emerged. This project aims to help IT students in general, to find and follow the right path in their university years to discover their passion, by creating a platform that integrates all the needed aspects
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="goForward()">&gt;</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = "level333.html";
+    }
+
+    function goForward() {
+      window.location.href = "level33333.html";
+    }
+  </script>
+</body>
+</html>

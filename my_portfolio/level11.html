@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Raghad Abu Dalhoum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+   <style>
+    * {
+      box-sizing: border-box;
+    }
+ 
+
+.cat-img {
+  width: 160px;
+  padding-left:50px ;
+  position:fixed;
+   top: 500px;
+  left: 1100px;
+}
+
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background-image: url('pics/origbig.png'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      height: 100vh;
+    }
+.start-button {
+  font-family: 'Press Start 2P', cursive;
+ position:fixed;
+   top: 500px;
+  left: 950px;
+  background: #ffe8f1;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 9px;
+  width: 190px;
+  height: 50px;
+  box-shadow: 2px 2px 0px #000;
+}
+ 
+  
+    </style>
+ 
+</head>
+<body>
+  <div class="container">
+    <h1>It's <span class="highlight">RAGHAD ABU DALHOUM!!</span></h1>
+
+    
+    <img src="pics/6175.JPG" alt="Raghad's Photo" class="profile-img" width="30">
+
+    <p class="description">
+      Enthusiastic CIS graduate with a strong foundation in web development, programming, UI/UX principles, and a genuine passion for graphic design. 
+      Committed to creating visually compelling, user-friendly digital experiences and eager to gain hands-on industry experience.
+    </p>
+<br>  <br><br>
+    <!-- Next Level Button -->
+    <div class="next-level">
+      <img src="pics/Screenshot_2025-05-25_182358-removebg-preview.png" alt="Pixel Cat" class="cat-img"> 
+      
+    <button class="start-button" onclick="startGame2()">CLICK ME TO ENTER NEXT LEVEL</button>
+  </div>
+  </div>
+  
+  <script>
+    function startGame2() {
+      window.location.href = "level2.html"; 
+    }
+  </script>
+</body>
+</html>

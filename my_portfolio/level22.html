@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <title>Technical Skills</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      height: 100vh;
+      background-image: url("pics/origbig.png"); 
+      background-size: cover;
+      background-position: center;
+      font-family: monospace;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .skill-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      padding: 20px;
+      background-color: #fdfce6;
+      transform: translate(-50%, -50%);
+      border: 6px solid #8ce2e2;
+      box-shadow: 0 0 0 10px #fdfce6, 0 0 0 16px #6e4963;
+    }
+
+    .title {
+        font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills ul {
+        font-family: 'Press Start 2P', cursive;
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .skills ul li {
+      margin: 5px 0;
+    }
+
+    .star {
+      color: gold;
+      margin-right: 5px;
+    }
+
+    .note {
+      font-family: 'Press Start 2P', cursive;  
+      width: 180px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .arrow {
+        font-family: 'Press Start 2P', cursive;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 40px;
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .arrow.left {
+        font-family: 'Press Start 2P', cursive;
+      left: 20px;
+    }
+
+    .arrow.right {
+        font-family: 'Press Start 2P', cursive;
+      right: 20px;
+    }
+
+    .arrow:hover {
+      color: #191257;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+  <button class="arrow left" onclick="previousPage()">&lt;</button>
+    <div class="skill-box">
+      <div class="title">TECHNICAL SKILLS</div>
+      <div class="skills">
+        <ul>
+          <li><span class="star">★</span>Java</li>
+          <li><span class="star">★</span>C++</li>
+          <li><span class="star">★</span><strong>HTML</strong></li>
+          <li><span class="star">★</span>PHP</li>
+          <li><span class="star">★</span>Figma</li>
+          <li><span class="star">★</span>Flutter</li>
+          <li><span class="star">★</span>MySQL</li>
+          <li><span class="star">★</span>Firebase</li>
+          <li><span class="star">★</span>Adobe Photoshop</li>
+          <li><span class="star">★</span>Adobe Illustrator</li>
+          <li><span class="star">★</span>3D Substance Painter</li>
+          <li><span class="star">★</span>Digital Drawing</li>
+          <li><span class="star">★</span>Blender</li>
+          <li><span class="star">★</span>Canva</li>
+        </ul>
+        <div class="note">
+            <br><br><br><br><br>
+          THESE SKILLS ARE<br>
+          CONSTANTLY BEING<br>
+          UPGRADED!!
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="nextPage()">&gt;</button>
+  </div>
+
+  <script>
+    function previousPage() {
+      window.location.href = "level2.html";
+    }
+
+    function nextPage() {
+     window.location.href = "level222.html";
+    }
+  </script>
+</body>
+</html>

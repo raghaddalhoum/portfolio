@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Contact Me</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background:  url('pics/MacBook\ Pro\ 16_\ -\ 8\ \(1\).png');
+      height: 100vh;
+      position: relative;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: relative;
+    }
+
+    .card {
+      box-shadow: 3px 3px #333;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      padding: 20px;
+      background-color: #fdfce6;
+      transform: translate(-50%, -50%);
+      border: 6px solid #8ce2e2;
+    }
+
+    .card h1 {
+        font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      font-size: 32px;
+      color: #8ce2e2;
+      text-shadow: 1px 1px #000;
+      margin-bottom: 30px;
+    }
+
+    .field {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+
+    .label {
+        line-height: 2;
+      width: 100px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #000;
+    }
+
+    .value {
+        line-height: 2;
+        font-family: 'Press Start 2P', cursive;
+      background-color: #eef2fb;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-size: 10px;
+      color: #000;
+    }
+
+    .message {
+        line-height: 2;
+        font-family: 'Press Start 2P', cursive;
+      background-color: #eef2fb;
+      padding: 15px;
+      border-radius: 30px;
+      font-size: 10px;
+      width: 100%;
+    }
+
+     .arrow {
+        font-family: 'Press Start 2P', cursive;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 40px;
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+    }
+     .arrow.left {
+        font-family: 'Press Start 2P', cursive;
+      left: 20px;
+    }
+
+    .arrow:hover {
+      color: #a35c89;
+    }
+
+    .socials {
+      position: absolute;
+      left: 30px;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .socials img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+
+    .cat-image {
+      width: 160px;
+  padding-left:50px ;
+  position:fixed;
+   top: 500px;
+  left: 1100px;
+    }
+
+    .cat-image img {
+      width: 100%;
+      height: 100%;
+      
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="arrow left" onclick="goBack()">&lt;</button>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/raghad.abudalhoum" target="_blank"><img src="pics/facebook.png" alt="Facebook"> </a>
+      <a href="https://www.instagram.com/raghadk.abo_dalhoum/"><img src="pics/instagram.png" alt="Website"> </a>
+      <a href="https://www.linkedin.com/in/raghad-abo-dalhoum-b9099a257/"><img src="pics/linkedin (1).png" alt="LinkedIn"></a> 
+    </div>
+
+    <div class="card">
+      <h1>CONTACT ME</h1>
+
+      <div class="field">
+        <div class="label">Email:</div>
+        <a href="mailto:raghaddalhoum@gmail.com"><div class="value">raghaddalhoum@gmail.com</div></a>
+      </div>
+
+      <div class="field">
+        <div class="label">Phone:</div>
+        <div class="value">+962 797850883</div>
+      </div>
+
+      <div class="field">
+        <div class="label">Message:</div>
+        <div class="message">
+          Hope you enjoyed playing this little game <br>I made!!
+        </div>
+      </div>
+    </div>
+
+    <div class="cat-image img">
+      <img src="pics/Screenshot_2025-05-25_182358-removebg-preview.png" alt="Cute Cat"> 
+    </div>
+  </div>
+
+  <script>
+    function goBack() {
+     window.location.href = "level5.html";
+    }
+  </script>
+</body>
+</html>

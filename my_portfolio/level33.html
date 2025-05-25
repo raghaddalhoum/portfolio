@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  
+  <title>Technical Skills</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      height: 100vh;
+      background-image: url("pics/origbig.png"); 
+      background-size: cover;
+      background-position: center;
+      font-family: monospace;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .skill-box {
+       box-shadow: 3px 3px #333;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      padding: 20px;
+      background-color: #fdfce6;
+      transform: translate(-50%, -50%);
+      border: 6px solid #8ce2e2;
+      
+    }
+
+    .title {
+        font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    
+  
+    
+
+    .note {
+      font-family: 'Press Start 2P', cursive;  
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .arrow {
+        font-family: 'Press Start 2P', cursive;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 40px;
+      color: #ffffff;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .arrow.left {
+        font-family: 'Press Start 2P', cursive;
+      left: 20px;
+    }
+
+    .arrow.right {
+        font-family: 'Press Start 2P', cursive;
+      right: 20px;
+    }
+
+    .arrow:hover {
+      color: #191257;
+    }
+    .cat-img {
+  width: 190px;
+  padding-left:50px ;
+  position:fixed;
+   top: 450px;
+  left: 900px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+  <button class="arrow left" onclick="previousPage()">&lt;</button>
+    <div class="skill-box">
+      
+        <div class="note"><p>hi there, this is mr.cat and he will show you some of the projects i have worked on and successfully completed. a small description for each project will be provided.</p>
+        </div>
+      </div> 
+      <img src="pics/Screenshot_2025-05-25_182358-removebg-preview.png" alt="Pixel Cat" class="cat-img"> 
+    </div>
+
+    <button class="arrow right" onclick="nextPage()">&gt;</button>
+  </div>
+
+  <script>
+    function previousPage() {
+      window.location.href = "level3.html";
+    }
+
+    function nextPage() {
+     window.location.href = "level333.html";
+    }
+  </script>
+</body>
+</html>
